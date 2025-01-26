@@ -57,7 +57,7 @@ class CrossEntropyCost(object):
     def delta(z, a, y):
         """Return the error delta from the output layer.  Note that the
         parameter ``z`` is not used by the method.  It is included in
-        the method's parameters in order to make the interface
+        the method's parameters in order to make the interface`
         consistent with the delta method for other cost classes.
 
         """
