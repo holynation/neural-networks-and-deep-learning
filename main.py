@@ -2,7 +2,7 @@ import argparse
 from src import mnist_loader 
 
 def main(dataset_path):
-    training_data, validation_data, test_data = mnist_loader.load_data_wrapper("data/mnist.pkl.gz")
+    training_data, validation_data, test_data = mnist_loader.load_data_wrapper(dataset_path)
 
     from src import network2
     net = network2.Network([784, 30, 10], cost=network2.CrossEntropyCost)
